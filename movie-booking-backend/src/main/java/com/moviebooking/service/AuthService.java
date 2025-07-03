@@ -9,6 +9,7 @@ import com.moviebooking.dto.UserLoginRequest;
 import com.moviebooking.dto.UserResponse;
 import com.moviebooking.exception.BadRequestException;
 import com.moviebooking.models.User;
+import com.moviebooking.enums.UserRole;
 import com.moviebooking.repository.UserRepository;
 import com.moviebooking.utils.JwtUtil;
 
@@ -70,7 +71,7 @@ public class AuthService {
         User user = User.builder()
                 .email(request.getEmail())
                 .name(request.getName())
-                .role(request.getRole())
+                .role(UserRole.USER) //default role is user
                 .hashedPassword(passwordEncoder.encode(request.getPassword()))
                 .build();
         

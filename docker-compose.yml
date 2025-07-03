@@ -1,14 +1,5 @@
 version: '3.8'
 services:
-  mongo:
-    image: mongo:6
-    container_name: mongo
-    restart: always
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo-data:/data/db
-      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
 
   backend:
     build: ./movie-booking-backend
@@ -18,7 +9,7 @@ services:
       - "8080:8080"
     environment:
       # MongoDB Configuration
-      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/moviebooking
+      - SPRING_DATA_MONGODB_URI=mongodb+srv://root:admin@movie-app.ukcpt9y.mongodb.net
       - SPRING_DATA_MONGODB_DATABASE=moviebooking
       
       # JWT Configuration
@@ -36,8 +27,7 @@ services:
       # Jackson Configuration
       - SPRING_JACKSON_DATE_FORMAT=yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
       - SPRING_JACKSON_TIME_ZONE=UTC
-    depends_on:
-      - mongo
+    
 
   frontend:
     build:
@@ -68,5 +58,3 @@ services:
     depends_on:
       - backend
 
-volumes:
-  mongo-data: 

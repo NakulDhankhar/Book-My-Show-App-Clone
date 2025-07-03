@@ -53,11 +53,6 @@ public class UserCreateRequest {
     @Schema(description = "User's password", example = "password123", required = true, minLength = 6, maxLength = 100)
     private String password;
     
-    /**
-     * User's role in the system. Defaults to USER if not specified.
-     */
-    @NotNull
-    @Schema(description = "User's role in the system", example = "USER", defaultValue = "USER", required = true)
-    private UserRole role;
+   
 }
 
