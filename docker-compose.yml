@@ -45,7 +45,7 @@ services:
       - "3000:80"
     environment:
       # Backend API Configuration
-      - REACT_APP_BACKEND_URL=http://localhost:8080
+      - REACT_APP_BACKEND_URL=http://3.110.41.24:8080
       - REACT_APP_API_BASE=/api
       
       # Application Configuration
