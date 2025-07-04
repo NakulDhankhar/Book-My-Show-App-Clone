@@ -1,7 +1,6 @@
 export const CONFIG = {
   // API Configuration
-  BACKEND_URL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080',
-  API_BASE: process.env.REACT_APP_API_BASE || '/api',
+  API_BASE: '/api',
   
   // Application Configuration
   APP_NAME: process.env.REACT_APP_APP_NAME || 'Movie Booking App',
