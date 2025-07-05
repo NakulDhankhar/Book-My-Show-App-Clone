@@ -1,8 +1,10 @@
 import React from 'react';
 import LoadingSpinner from '../common/LoadingSpinner';
 import ErrorMessage from '../common/ErrorMessage';
+import { CONFIG } from '../../constants/config';
 
 const HomePage = ({ movies, loading, error, onMovieSelect, onRetry }) => {
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">

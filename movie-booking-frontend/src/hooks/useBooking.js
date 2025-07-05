@@ -88,6 +88,15 @@ export const useBooking = () => {
       // Reset selection
       setSelectedSeats([]);
       
+      // Fetch updated bookings to include the new booking
+      try {
+        const bookingsData = await bookingsAPI.getAll();
+        setBookings(bookingsData);
+      } catch (fetchErr) {
+        console.warn('Failed to fetch updated bookings:', fetchErr);
+        // Don't fail the booking if we can't fetch updated bookings
+      }
+      
       return { success: true, totalAmount };
     } catch (err) {
       const errorMessage = err.response?.data?.detail || 'Booking failed. Please try again.';
