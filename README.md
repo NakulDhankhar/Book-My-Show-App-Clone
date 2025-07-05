@@ -1,4 +1,4 @@
-# 🎬 Movie Booking App
+# 🎬 Movie Booking App (Book My Show Clone)
 
 [![Java](https://img.shields.io/badge/Java-17-blue?logo=java)](https://www.java.com/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-brightgreen?logo=springboot)](https://spring.io/projects/spring-boot)
