@@ -13,17 +13,16 @@
 
 ## 📚 Table of Contents
 
-- [Tech Stack](#tech-stack)
-- [API Documentation](#api-documentation)
-- [Frontend Preview](#frontend-preview)
-- [App Screenshots](#app-screenshots)
-- [Test Credentials](#test-credentials)
-- [Installation](#installation)
-- [Docker Installation](#docker-installation)
-- [Architecture](#architecture)
-- [API Overview](#api-overview)
-- [Database Schema](#database-schema)
-- [Contact](#contact)
+- [Tech Stack](#-tech-stack)
+- [API Documentation](#-api-documentation)
+- [Frontend Preview](#-frontend-preview)
+- [App Screenshots](#-app-screenshots)
+- [Test Credentials](#-test-credentials)
+- [Installation](#️-installation)
+- [Docker Installation](#-docker-installation)
+- [Architecture](#️-architecture)
+- [API Overview](#-api-overview)
+- [Database Schema](#-database-schema-mongodb-collections)
 
 ---
 
